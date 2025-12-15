@@ -59,7 +59,7 @@ body {
     text-align: center;
     padding: 200px 5%;
     padding-right: 70%;
-    background: url(image/Kanva\ -\ E-Commerce\ F.png) no-repeat;
+    background: url(/image/Kanva\ -\ E-Commerce\ F.png) no-repeat;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -248,7 +248,7 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        background: rgb(255, 255, 255, .3);
+        background: rgb(255, 255, 255, .5);
         backdrop-filter: unset(50%);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         border-bottom-left-radius: 10px;
@@ -257,6 +257,13 @@ body {
         transition: .3s ease;
 
     }
+    /* خلفية القائمة مع Blur */
+.links {
+    background-color: rgba(255, 255, 255, 0.5); /* لون شبه شفاف */
+    backdrop-filter: blur(2px); /* تأثير الضبابية */
+    -webkit-backdrop-filter: blur(10px); /* دعم لمتصفحات WebKit */
+}
+
 
     #check:checked~.links {
         height: 17.7rem;
@@ -272,63 +279,46 @@ body {
 }
 
 
+/* أيقونات القائمة مخفية افتراضيًا */
+.menu-icons {
+    display: none;
+}
 
-@media (max-width: 48rem) { /* تقريبًا 768px */
+/* ===== Media Query بين 30rem و 48rem ===== */
+@media (min-width: 30rem) and (max-width: 48rem) { /* 30rem ≈ 480px, 48rem ≈ 768px */
 
-    /* الشعار */
-    .header img {
-        width: 1rem; /* أصغر */
-        height: auto;
-        left: 1rem; /* مسافة من الحافة */
-        position: absolute;
+    /* نخفي أيقونات الهيدر الأصلية */
+    .user,
+    .Search,
+    .heart,
+    .bag-shopping {
+        display: none;
     }
 
-    /* اسم الموقع */
-    .logo {
-        font-size: 1rem; /* أصغر */
-        padding-left: 1rem; /* مسافة مناسبة من الشعار */
-        
+    /* ===== أيقونات القائمة (أول سطر) ===== */
+    .menu-icons {
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;        /* مسافة صغيرة */
+        padding: 1rem 0;
+        border-bottom: 0.0625rem solid rgba(0,0,0,0.1); /* 1px ≈ 0.0625rem */
     }
 
-    /* أيقونات الهيدر تبقى في أماكنها */
-    .user a {
-        right: 12%;
-        bottom: 15px;
-        font-size: 0.9rem;
+    .menu-icons a {
+        font-size: 1.2rem;
+        color: #8C795F;
+        text-decoration: none;
     }
 
-    .Search a {
-        right: 9%;
-        bottom: 15px;
-        font-size: 0.9rem;
-    }
-
-    .heart a {
-        right: 6%;
-        bottom: 15px;
-        font-size: 0.9rem;
-    }
-
-    .bag-shopping a {
-        right: 3%;
-        bottom: 15px;
-        font-size: 0.9rem;
-    }
-
-    /* العدادات */
-    .count {
-        font-size: 0.7rem;
-        top: -0.5rem;
-        right: -0.3rem;
-    }
-
-    /* أيقونة القائمة */
-    .icon {
-        right: 1rem;
-        font-size: 2rem;
-        display: inline-flex;
+    /* روابط القائمة تحت الأيقونات */
+    .links a {
+        margin: 1rem;
+        display: block;
+        text-align: center;
     }
 }
+
+
 
 /*اخر شىء في header */
 /* =========================
@@ -345,8 +335,8 @@ body {
 
     /* الشعار */
     .header img {
-        width: 50px;
-        left: 15px;
+        width: 35px;
+        left: 40px;
     }
 
     /* اسم الموقع */
@@ -1791,5 +1781,4 @@ body, html {
     width: 100%;
     overflow-x: hidden;
 }
-
 

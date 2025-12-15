@@ -59,7 +59,7 @@ body {
     text-align: center;
     padding: 200px 5%;
     padding-right: 70%;
-    background: url(/image/Kanva\ -\ E-Commerce\ F.png) no-repeat;
+    background: url(image/Kanva\ -\ E-Commerce\ F.png) no-repeat;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -556,7 +556,7 @@ body {
 /* الصورة الكبيرة يسار */
 .lux-layout .left-image {
     width: 50%;
-    background: url(/image/face2.jpeg) center/cover no-repeat;
+    background: url(image/face2.jpeg) center/cover no-repeat;
     border-radius: 18px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform .5s ease;
@@ -578,7 +578,7 @@ body {
 .lux-layout .right-side .top-image {
     height: 60%;
     width: 600px;
-    background: url(/image/download\ \(2\).jpeg) no-repeat;
+    background: url(image/download\ \(2\).jpeg) no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 18px;
@@ -746,21 +746,21 @@ body {
 }
 
 .serum .col-img {
-    background-image: url(/image/Make\ a\ lasting\ impression\ with\ minimalistic….jpeg);
+    background-image: url(image/Make\ a\ lasting\ impression\ with\ minimalistic….jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .cream .col-img {
-    background-image: url(/image/vvv.jpeg);
+    background-image: url(image/vvv.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .wash .col-img {
-    background-image: url(/image/c.jpeg);
+    background-image: url(image/c.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1216,7 +1216,7 @@ body {
 .about-elegant {
     padding: 80px 14%;
     /* background: linear-gradient(135deg,rgb(247, 244, 239),rgb(201, 188, 168)); */
-    background: url(/image/Skin\ Care.jpeg);
+    background: url(image/Skin\ Care.jpeg);
     background-size: cover;
     background-position: center center;
     font-family: "Inter", sans-serif;
@@ -1781,4 +1781,5 @@ body, html {
     width: 100%;
     overflow-x: hidden;
 }
+
 

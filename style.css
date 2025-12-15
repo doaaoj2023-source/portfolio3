@@ -257,12 +257,16 @@ body {
         transition: .3s ease;
 
     }
+
     /* خلفية القائمة مع Blur */
-.links {
-    background-color: rgba(255, 255, 255, 0.5); /* لون شبه شفاف */
-    backdrop-filter: blur(2px); /* تأثير الضبابية */
-    -webkit-backdrop-filter: blur(10px); /* دعم لمتصفحات WebKit */
-}
+    .links {
+        background-color: rgba(255, 255, 255, 0.5);
+        /* لون شبه شفاف */
+        backdrop-filter: blur(2px);
+        /* تأثير الضبابية */
+        -webkit-backdrop-filter: blur(10px);
+        /* دعم لمتصفحات WebKit */
+    }
 
 
     #check:checked~.links {
@@ -278,6 +282,7 @@ body {
     }
 }
 
+/* عدلت ميديا متع الهيدر من هني 1 */
 
 /* أيقونات القائمة مخفية افتراضيًا */
 .menu-icons {
@@ -285,7 +290,8 @@ body {
 }
 
 /* ===== Media Query بين 30rem و 48rem ===== */
-@media (max-width: 30rem) and (max-width: 48rem) { /* 30rem ≈ 480px, 48rem ≈ 768px */
+@media (max-width: 500PX) and (max-width: 820PX) {
+    /* 30rem ≈ 480px, 48rem ≈ 768px */
 
     /* نخفي أيقونات الهيدر الأصلية */
     .user,
@@ -299,9 +305,11 @@ body {
     .menu-icons {
         display: flex;
         justify-content: center;
-        gap: 0.6rem;        /* مسافة صغيرة */
+        gap: 0.6rem;
+        /* مسافة صغيرة */
         padding: 1rem 0;
-        border-bottom: 0.0625rem solid rgba(0,0,0,0.1); /* 1px ≈ 0.0625rem */
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+        /* 1px ≈ 0.0625rem */
     }
 
     .menu-icons a {
@@ -556,7 +564,7 @@ body {
 /* الصورة الكبيرة يسار */
 .lux-layout .left-image {
     width: 50%;
-    background: url(image/face2.jpeg) center/cover no-repeat;
+    background: url(/image/face2.jpeg) center/cover no-repeat;
     border-radius: 18px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform .5s ease;
@@ -578,7 +586,7 @@ body {
 .lux-layout .right-side .top-image {
     height: 60%;
     width: 600px;
-    background: url(image/download\ \(2\).jpeg) no-repeat;
+    background: url(/image/download\ \(2\).jpeg) no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 18px;
@@ -746,21 +754,21 @@ body {
 }
 
 .serum .col-img {
-    background-image: url(image/Make\ a\ lasting\ impression\ with\ minimalistic….jpeg);
+    background-image: url(/image/Make\ a\ lasting\ impression\ with\ minimalistic….jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .cream .col-img {
-    background-image: url(image/vvv.jpeg);
+    background-image: url(/image/vvv.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .wash .col-img {
-    background-image: url(image/c.jpeg);
+    background-image: url(/image/c.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1216,7 +1224,7 @@ body {
 .about-elegant {
     padding: 80px 14%;
     /* background: linear-gradient(135deg,rgb(247, 244, 239),rgb(201, 188, 168)); */
-    background: url(image/Skin\ Care.jpeg);
+    background: url(/image/Skin\ Care.jpeg);
     background-size: cover;
     background-position: center center;
     font-family: "Inter", sans-serif;
@@ -1777,10 +1785,8 @@ body {
 }
 
 /* إصلاح مشكلة القص فقط */
-body, html {
+body,
+html {
     width: 100%;
     overflow-x: hidden;
 }
-
-
-
